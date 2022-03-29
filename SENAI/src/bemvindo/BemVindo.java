@@ -24,7 +24,7 @@ public class BemVindo {
 		 notas[i] = teclado.nextFloat();teclado.nextLine();
 		}
 		
-		if (idade >= 30 && (nome.contains("a") || nome.contains("A"))) {
+		if ((nome.contains("a") || nome.contains("A"))) {
 			System.out.println("BEM VINDO AO SENAI " + nome );
 			
 		}else {

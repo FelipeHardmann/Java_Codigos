@@ -8,8 +8,16 @@ public class Clientes {
 	public Clientes() {
 		System.out.println("Classe clientes");
 	}
-	
-	public Clientes(String name) {
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 }

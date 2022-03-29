@@ -30,8 +30,8 @@ public class Principal {
 			System.out.println("Digite o nome dos funcionários");
 			String nomeTeclado = scanner.nextLine();
 			Funcionario func = new Funcionario();
-			func.name = nomeTeclado;
-			cons1.funcionarios.add(func);
+			func.setName(nomeTeclado); 
+			cons1.setFuncionarios(null);
 		}
 		
 		
