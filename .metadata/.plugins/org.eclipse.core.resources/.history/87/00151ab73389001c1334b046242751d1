@@ -1,0 +1,32 @@
+package bemvindo;
+
+import java.util.Scanner;
+
+public class BemVindo {
+	
+	public static void main(String []args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("digite seu nome ");
+		String nome = teclado.nextLine();
+		
+		System.out.println("digite sua idade ");
+		Integer idade = teclado.nextInt();
+		
+		System.out.println("digite seu sexo com a primeira letra ");
+		String linhasexo = teclado.nextLine();
+		Character sexo = linhasexo.charAt(0);
+		
+		System.out.println("digite sua nota");
+		Float nota = teclado.nextFloat();
+		
+		if (idade >= 30 && (nome.contains("a") || nome.contains("A"))) {
+			System.out.println("BEM VINDO AO SENAI " + nome );
+			
+		}else {
+			System.out.println("BEM VINDO AO SENAI " + nome + ". Você tem " + idade + " anos ");
+			
+		}
+	}
+}

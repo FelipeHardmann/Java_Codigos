@@ -1,0 +1,23 @@
+package bemvindo;
+
+import java.util.Scanner;
+
+public class BemVindo {
+	
+	public static void main(String []args) {
+		
+		System.out.println("digite seu nome ");
+		Scanner teclado = new Scanner(System.in);
+		
+		String nome = teclado.nextLine();
+		
+		System.out.println("digite sua idade ");
+		int idade = teclado.nextInt();
+		
+		if (idade <= 30) {
+			System.out.println("BEM VINDO AO SENAI " + nome + ". Você tem " + idade + " anos ");
+		}else {
+			System.out.println("BEM VINDO AO SENAI " + nome );
+		}
+	}
+}
